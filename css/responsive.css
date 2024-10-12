@@ -141,6 +141,13 @@
 }
 
 @media (max-width:540px) {
+    .mail, .name {
+        max-width: 100%;
+        padding: 12px 15px;
+        margin: 0px auto 20px;
+        outline: none;
+        background: var(--bg-color);
+    }
     .social{
         margin:0 auto 20px;
         display: flex;
