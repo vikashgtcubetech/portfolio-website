@@ -8,6 +8,12 @@
     font-family: 'Jost', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
 :root {
     --bg-color: #ffffff;
     --text-color: #000;
@@ -305,6 +311,21 @@ header.sticky {
     margin-bottom: 40px;
 }
 
+.certificate{
+    display: none;
+}
+.cert {
+  
+    max-width: 100%;
+    height: 100%;
+}
+
+.cert img {
+    width: 100%;
+    height: 100%;
+
+}
+
 .heading {
     text-align: center;
 }
@@ -474,86 +495,123 @@ header.sticky {
     will-change: transform;
     transform: perspective(1000px) rotateX(0.80deg) rotateY(0.23deg) scale3d(1.05, 1.05, 1.05);
 }
-
-.contact {
-    background: #8067f0;
-    max-width: 74%;
-    margin: 50px auto 0px;
-    padding: 70px 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 12px;
-    /* background-image: url(../images/); */
+.contact .heading p{
+    font-size: 0.9em;
+    padding-top: 10px;
 }
 
-.center h3 {
+
+.contact_second {
+    background: #8067f0;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 5%;
+    padding: 70px 150px;
+
+}
+
+.contact_second_text {
+    color: #fff;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--p-font);
+
+}
+
+.contact_second_text h3,
+.contact_second_form h3 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 5px;
     color: var(--bg-color);
+    position: relative;
 }
 
-.center p {
-    font-size: var(--p-font);
-    /* font-weight: 500; */
-    line-height: 26px;
-    margin-bottom: 25px;
-    color: #dad4f6;
+.second_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-form{
+
+.linkdin,
+.github {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background: var(--main-color);
+}
+
+.second_text_about {
+    font-size: 14px;
+    color: #f5f3f3;
+}
+
+.contact_second_form {
+    max-width: 45%;
+    display: flex;
+    justify-content: right;
+
+}
+
+form {
     width: 100%;
     padding: 0;
     margin: 0;
 }
-form div{
-    width: 100%;
-}
-form div p{
+
+form div p {
     margin-bottom: 10px;
     margin-top: 10px;
     color: var(--bg-color);
     font-weight: bold;
-    /* text-align: center; */
-}
-form div input{
-    margin-bottom: 20px;
+
 }
 
-.mail .name {
+form div input,
+form div textarea {
+    margin-bottom: 10px;
     max-width: 100%;
-    /* width: 470px; */
-    padding: 12px 15px;
-    background: var(--bg-color);
-    color: var(--text-color);
-    border: none;
-    outline: none;
-    margin: 0px 0px 20px 0px;
-    border-radius: 5px;
 }
-.message{
-    max-width: 100%;
-    /* width: 470px; */
-    padding: 12px 15px;
+
+.mail,
+.name,
+.message {
+    padding: 7px 15px;
     background: var(--bg-color);
     color: var(--text-color);
-    border: none;
+    border: 1px solid black;
     outline: none;
     margin: 0px 0px 20px 0px;
-    border-radius: 5px;
+    border-radius: 7px;
+    font-size: 0.7em;
+}
 
+textarea {
+    height: 100px;
+    width: 100%;
 }
 
 .submit {
-    padding: 12px 40px;
+    padding: 7px 10px;
     background: var(--main-color);
     color: var(--bg-color);
     border: none;
-    outline: none;
     margin: 0px 0px 20px 0px;
-    border-radius: 30px;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 0.7em;
+    transition: ease 0.5s;
+}
+
+.submit:hover {
+    background-color: #45a049;
 }
 
 .ends {

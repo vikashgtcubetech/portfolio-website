@@ -16,14 +16,14 @@ window.onscroll=()=>{
     navlist.classList.remove("active")
 };
 
-const sr = ScrollReveal({
-    distance:'45px',
-    duration:2700,
-    reset:true
-})
-sr.reveal('.home_text',{delay:150, origin:'left'});
-sr.reveal('.home_img',{delay:150, origin:'right'});
+// const sr = ScrollReveal({
+//     distance:'45px',
+//     duration:2700,
+//     reset:true
+// })
+// sr.reveal('.home_text',{delay:50, origin:'left'});
+// sr.reveal('.home_img',{delay:50, origin:'right'});
 
-sr.reveal('.sub-service,.about,.portfolio,.service,.contact',{delay:100, origin:'bottom'});
+// sr.reveal('.sub-service,.about,.portfolio,.service,.contact',{delay:50, origin:'bottom'});
 
 
